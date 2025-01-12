@@ -25,4 +25,6 @@ The Pebble SDK natively supports JavaScript, thru PebbleKit JS. This is great, h
 This project aims to solve these issues by providing a way to write TypeScript code, and telling the Pebble SDK to _only_ build the C code. We then take the compiled C code, as well as our Webpack-compiled TypeScript code, and chuck it into a PBW file. However, this is not a perfect solution, and there are some caveats:
 
 - As of current, the PebbleKit library has no type definitions. The keen-eyed will notice that the `pebble.d.ts` file simply maps `Pebble` to `any`. This is not ideal, but it's better than nothing. (which, is what you'd get otherwise)
-- This **only works on Android**. The iOS Pebble app does not support the modern versions of JavaScript that we use. This is a limitation of the Pebble app, and there's nothing we can do about it as we cannot update the Pebble app.
+- This **only works on Android**[^1]. The iOS Pebble app does not support the modern versions of JavaScript that we use. This is a limitation of the Pebble app, and there's nothing we can do about it as we cannot update the Pebble app.
+
+[^1]: FWIW, I've never actually tried. However, when others in the community have attempted to use modern JS on the iOS app, explosions occur. You could try to get around this by setting Webpack's target to ES5, however then you're missing out on newer JS features at the runtime.
