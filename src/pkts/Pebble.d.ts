@@ -1,0 +1,1 @@
+declare var Pebble: any;

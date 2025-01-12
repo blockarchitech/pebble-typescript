@@ -1,0 +1,41 @@
+{
+  "name": "test",
+  "author": "MakeAwesomeHappen",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "scripts": {
+    "webpack": "webpack",
+    "build": "python3 pebble.py build",
+    "clean": "python3 pebble.py clean"
+  },
+  "private": true,
+  "pebble": {
+    "displayName": "test",
+    "uuid": "f8404983-83df-42ab-b620-5e6beb802917",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [
+      "dummy"
+    ],
+    "resources": {
+      "media": []
+    }
+  },
+  "devDependencies": {
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
