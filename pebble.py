@@ -34,4 +34,4 @@ if __name__ == '__main__':
         os.system(PEBBLE_TOOL_LOCATION + ' clean')
         os.system("rm -rf dist")
     else:
-        print("Usage: python build.py [build|clean]")
+        print("Usage: python pebble.py [build|clean]")
