@@ -7,8 +7,8 @@
   ],
   "scripts": {
     "webpack": "webpack",
-    "build": "python3 pebble.py build",
-    "clean": "python3 pebble.py clean"
+    "build": "./bundler.sh build",
+    "clean": "./bundler.sh clean"
   },
   "private": true,
   "pebble": {

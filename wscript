@@ -47,6 +47,7 @@ def build(ctx):
     ctx.env = cached_env
 
     ctx.set_group('bundle')    
+    ctx.pbl_bundle(binaries=binaries)
 
 
 
